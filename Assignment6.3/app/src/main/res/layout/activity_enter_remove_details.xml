@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_enter_remove_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jasonmckay.assignment63.EnterRemoveDetails">
+
+    <TextView
+        android:text="@string/enter_vehicle_id_to_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_enter_remove_details"
+        app:layout_constraintTop_toTopOf="@+id/activity_enter_remove_details"
+        android:layout_marginTop="40dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_enter_remove_details" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName|numberPassword"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/txtVehicleId"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_enter_remove_details"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:layout_marginTop="48dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_enter_remove_details"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:text="@string/next3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_enter_remove_details"
+        app:layout_constraintTop_toBottomOf="@+id/txtVehicleId"
+        android:layout_marginTop="80dp"
+        android:onClick="searchID"
+        app:layout_constraintRight_toRightOf="@+id/activity_enter_remove_details" />
+</android.support.constraint.ConstraintLayout>

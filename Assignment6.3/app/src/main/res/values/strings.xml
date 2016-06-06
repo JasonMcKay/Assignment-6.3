@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Assignment6.3</string>
+    <string name="leaded">Leaded</string>
+    <string name="unleaded">Unleaded</string>
+    <string name="diesel">Diesel</string>
+    <string name="door_type">Door Type:</string>
+    <string name="four_door">Four door</string>
+    <string name="two_door">Two door</string>
+    <string name="no_door">No door</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="engine_type">Engine Type:</string>
+    <string name="please_select_vehicle_details">Please select vehicle details</string>
+    <string name="engine_type2">Engine Type:</string>
+    <string name="door_type2">Door Type:</string>
+    <string name="back2">Back</string>
+    <string name="confirm">Confirm</string>
+    <string name="menu">Menu</string>
+    <string name="new_vehicle_added_successfully">New vehicle added successfully!</string>
+    <string name="remove_vehicle">Remove Vehicle</string>
+    <string name="update_vehicle">Update Vehicle</string>
+    <string name="list_vehicles">List Vehicles</string>
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="select_an_option">Select an option</string>
+    <string name="enter_vehicle_id_to_remove">Enter vehicle ID to remove</string>
+    <string name="vehicleid">VehicleID</string>
+    <string name="next3">Next</string>
+    <string name="next4">Search</string>
+    <string name="enter_vehicle_id_to_edit">Enter Vehicle ID to edit</string>
+</resources>

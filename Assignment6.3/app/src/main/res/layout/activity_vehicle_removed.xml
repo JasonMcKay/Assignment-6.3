@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_vehicle_removed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jasonmckay.assignment63.VehicleRemoved">
+
+    <TextView
+        android:text="Vehicle Successfully Removed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_vehicle_removed"
+        app:layout_constraintTop_toTopOf="@+id/activity_vehicle_removed"
+        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_vehicle_removed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblDeletedVehicle"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_vehicle_removed"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        android:layout_marginTop="20dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_vehicle_removed" />
+
+    <Button
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button8"
+        android:onClick="home"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_vehicle_removed"
+        app:layout_constraintTop_toBottomOf="@+id/lblDeletedVehicle"
+        android:layout_marginTop="8dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_vehicle_removed" />
+</android.support.constraint.ConstraintLayout>

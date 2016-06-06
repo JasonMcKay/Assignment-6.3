@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_confirm_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jasonmckay.assignment63.ConfirmDetails">
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblVehicleType"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_confirm_details"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@+id/activity_confirm_details"
+        android:layout_marginTop="16dp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_confirm_details"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblVehicleType"
+        android:layout_marginTop="40dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_confirm_details">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:text="@string/engine_type2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4" />
+
+            <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblEngineType" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/door_type2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6" />
+
+            <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblDoorType" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:text="@string/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBack"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_confirm_details"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        android:layout_marginTop="80dp"
+        android:onClick="GoBack" />
+
+    <Button
+        android:text="@string/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConfirm"
+        app:layout_constraintLeft_toRightOf="@+id/btnBack"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        android:layout_marginTop="80dp"
+        android:onClick="ConfirmVehicle" />
+
+</android.support.constraint.ConstraintLayout>

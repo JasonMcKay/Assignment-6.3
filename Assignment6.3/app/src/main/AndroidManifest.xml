@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jasonmckay.assignment63">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EnterDetailsActivity" />
+        <activity android:name=".ConfirmDetails" />
+        <activity android:name=".VehicleInserted" />
+        <activity android:name=".EnterRemoveDetails" />
+        <activity android:name=".ConfirmRemove" />
+        <activity android:name=".VehicleRemoved" />
+        <activity android:name=".EnterUpdateDetails" />
+        <activity android:name=".ConfirmUpdate" />
+        <activity android:name=".VehicleUpdate" />
+        <activity android:name=".ListVehicles"></activity>
+    </application>
+
+</manifest>

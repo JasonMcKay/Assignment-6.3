@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_vehicle_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jasonmckay.assignment63.VehicleUpdate">
+
+    <TextView
+        android:text="Vehicle Updated!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tsss"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_vehicle_update"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@+id/activity_vehicle_update"
+        android:layout_marginTop="25dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_vehicle_update"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblUpdatedVehicle"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_vehicle_update"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tsss"
+        android:layout_marginTop="35dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_vehicle_update"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHome"
+        android:onClick="home"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_vehicle_update"
+        app:layout_constraintTop_toBottomOf="@+id/lblUpdatedVehicle"
+        android:layout_marginTop="100dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_vehicle_update" />
+</android.support.constraint.ConstraintLayout>

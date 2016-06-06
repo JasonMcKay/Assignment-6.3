@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_confirm_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jasonmckay.assignment63.ConfirmUpdate">
+
+    <TextView
+        android:text="Confirm vehicle update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_confirm_update"
+        app:layout_constraintTop_toTopOf="@+id/activity_confirm_update"
+        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_confirm_update" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/tableEdit"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_confirm_update"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        android:layout_marginTop="35dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_confirm_update"
+        android:layout_marginLeft="100dp">
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/tableRow" >
+
+            <TextView
+                android:text="Engine Type: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblUpdateEngine"
+                android:layout_marginLeft="10dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:text="Confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConfirmUpdate"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_confirm_update"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="confirmUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/tableEdit"
+        android:layout_marginTop="80dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_confirm_update"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+</android.support.constraint.ConstraintLayout>
